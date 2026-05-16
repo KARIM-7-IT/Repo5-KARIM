@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أوتو كير | تواصل معنا</title>
+  <meta name="description" content="تواصل مع أوتو كير — احجز موعد صيانة، استفسر عن خدماتنا، أو زر ورشتنا في الرياض.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Cairo', 'sans-serif'] },
+          colors: { brand: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' } }
+        }
+      }
+    }
+  </script>
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-950 text-slate-100 font-sans antialiased">
+
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-lg">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-amber-500/20 text-amber-400">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10m14 0h2m-2 0h-5m-9 0H3m2 0h3M6 20h12M6 16h12"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-white">أوتو <span class="text-amber-400">كير</span></span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="index.html" class="text-sm font-medium text-slate-300 transition hover:text-amber-400">الرئيسية</a>
+        <a href="services.html" class="text-sm font-medium text-slate-300 transition hover:text-amber-400">الخدمات</a>
+        <a href="contact.html" class="border-b-2 border-amber-400 pb-0.5 text-sm font-semibold text-amber-400">تواصل معنا</a>
+        <a href="contact.html" class="rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-amber-400">احجز موعداً</a>
+      </div>
+      <button id="menu-btn" type="button" class="rounded-lg p-2 text-slate-300 hover:bg-slate-800 md:hidden" aria-label="فتح القائمة">
+        <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-950 px-4 py-4 md:hidden">
+      <div class="flex flex-col gap-3">
+        <a href="index.html" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-300 hover:bg-slate-900">الرئيسية</a>
+        <a href="services.html" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-300 hover:bg-slate-900">الخدمات</a>
+        <a href="contact.html" class="rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-amber-400">تواصل معنا</a>
+        <a href="contact.html" class="mt-2 rounded-lg bg-amber-500 px-4 py-3 text-center text-sm font-semibold text-slate-950">احجز موعداً</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <section class="border-b border-slate-800 bg-slate-900/30 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">تواصل معنا</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
+          نحن هنا لمساعدتك — أرسل رسالتك أو احجز موعداً وسنعود إليك في أقرب وقت.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-2">
+
+          <!-- Form -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-white">أرسل رسالة</h2>
+            <p class="mt-2 text-sm text-slate-400">املأ النموذج وسنتواصل معك خلال ٢٤ ساعة</p>
+
+            <div id="form-success" class="mt-6 hidden rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-400" role="alert">
+              تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.
+            </div>
+
+            <form id="contact-form" class="mt-6 space-y-5" novalidate>
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-300">الاسم</label>
+                <input type="text" id="name" name="name" required
+                  class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white placeholder-slate-500 transition focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/30"
+                  placeholder="اسمك الكامل">
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-slate-300">رقم الجوال</label>
+                <input type="tel" id="phone" name="phone" required dir="ltr"
+                  class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-end text-white placeholder-slate-500 transition focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/30"
+                  placeholder="05xxxxxxxx">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-slate-300">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required dir="ltr"
+                  class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-end text-white placeholder-slate-500 transition focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/30"
+                  placeholder="example@email.com">
+              </div>
+              <div>
+                <label for="service" class="block text-sm font-medium text-slate-300">نوع الخدمة</label>
+                <select id="service" name="service" required
+                  class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white transition focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/30">
+                  <option value="">اختر الخدمة</option>
+                  <option value="maintenance">صيانة دورية</option>
+                  <option value="oil">تغيير زيت وفلاتر</option>
+                  <option value="engine">إصلاح المحرك والقير</option>
+                  <option value="brakes">فرامل وتعليق</option>
+                  <option value="electrical">كهرباء وبطارية</option>
+                  <option value="ac">تكييف وتبريد</option>
+                  <option value="inspection">فحص شامل قبل الشراء</option>
+                  <option value="detailing">تلميع وتفصيل داخلي</option>
+                  <option value="other">أخرى</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-slate-300">الرسالة</label>
+                <textarea id="message" name="message" rows="4" required
+                  class="mt-2 w-full resize-none rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white placeholder-slate-500 transition focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/30"
+                  placeholder="صف مشكلتك أو الخدمة المطلوبة..."></textarea>
+              </div>
+              <button type="submit"
+                class="w-full rounded-lg bg-amber-500 py-3.5 text-base font-semibold text-slate-950 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-slate-900">
+                إرسال الرسالة
+              </button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div class="space-y-8">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-6 sm:p-8">
+              <h2 class="text-xl font-bold text-white">معلومات التواصل</h2>
+              <ul class="mt-6 space-y-5">
+                <li class="flex gap-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-500/15 text-amber-400">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-white">العنوان</p>
+                    <p class="mt-1 text-sm text-slate-400">شارع الملك فهد، حي العليا، الرياض ١٢٢١١، المملكة العربية السعودية</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-500/15 text-amber-400">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-white">الهاتف</p>
+                    <a href="tel:+966500000000" class="mt-1 block text-sm text-amber-400 hover:underline" dir="ltr">+966 50 000 0000</a>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-500/15 text-amber-400">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-white">البريد الإلكتروني</p>
+                    <a href="mailto:info@autocare.sa" class="mt-1 block text-sm text-amber-400 hover:underline">info@autocare.sa</a>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-500/15 text-amber-400">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </span>
+                  <div>
+                    <p class="font-medium text-white">ساعات العمل</p>
+                    <p class="mt-1 text-sm text-slate-400">السبت – الخميس: ٨:٠٠ ص – ٨:٠٠ م</p>
+                    <p class="text-sm text-slate-400">الجمعة: مغلق</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="overflow-hidden rounded-2xl border border-slate-800">
+              <iframe
+                title="موقع أوتو كير على الخريطة"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.0!2d46.6753!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDAnMzEuMSJF!5e0!3m2!1sar!2ssa!4v1"
+                class="h-64 w-full border-0 bg-slate-800 grayscale"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+              <p class="bg-slate-900 px-4 py-2 text-center text-xs text-slate-500">يمكنك استبدال رابط الخريطة بموقع ورشتك الفعلي</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-t border-slate-800 bg-slate-900/30 py-16 sm:py-20">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-center text-2xl font-bold text-white sm:text-3xl">أسئلة شائعة</h2>
+        <div class="mt-10 space-y-3" id="faq-list">
+          <details class="group rounded-xl border border-slate-800 bg-slate-900/60">
+            <summary class="flex cursor-pointer list-none items-center justify-between px-6 py-4 font-medium text-white marker:content-none">
+              كيف أحجز موعداً؟
+              <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="border-t border-slate-800 px-6 pb-4 pt-2 text-sm text-slate-400">يمكنك الحجز عبر نموذج التواصل، أو الاتصال بنا مباشرة على الرقم الموضح. سنؤكد الموعد عبر رسالة نصية.</p>
+          </details>
+          <details class="group rounded-xl border border-slate-800 bg-slate-900/60">
+            <summary class="flex cursor-pointer list-none items-center justify-between px-6 py-4 font-medium text-white marker:content-none">
+              ما مدة الضمان على الخدمات؟
+              <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="border-t border-slate-800 px-6 pb-4 pt-2 text-sm text-slate-400">نوفر ضماناً لمدة ٣ أشهر أو ٥٠٠٠ كم (أيهما أسبق) على معظم أعمال الإصلاح والقطع المستبدلة.</p>
+          </details>
+          <details class="group rounded-xl border border-slate-800 bg-slate-900/60">
+            <summary class="flex cursor-pointer list-none items-center justify-between px-6 py-4 font-medium text-white marker:content-none">
+              ما طرق الدفع المتاحة؟
+              <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="border-t border-slate-800 px-6 pb-4 pt-2 text-sm text-slate-400">نقبل النقد، بطاقات مدى وائتمان، وApple Pay. كما نوفر خيارات تقسيط لبعض الخدمات الكبيرة.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/50">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div>
+          <a href="index.html" class="text-xl font-bold text-white">أوتو <span class="text-amber-400">كير</span></a>
+          <p class="mt-4 text-sm leading-relaxed text-slate-400">شريكك الموثوق في صيانة وإصلاح السيارات — جودة، أمان، وشفافية في كل خدمة.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">روابط سريعة</h4>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="transition hover:text-amber-400">الرئيسية</a></li>
+            <li><a href="services.html" class="transition hover:text-amber-400">الخدمات</a></li>
+            <li><a href="contact.html" class="transition hover:text-amber-400">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">ساعات العمل</h4>
+          <p class="mt-4 text-sm text-slate-400">السبت – الخميس: ٨:٠٠ – ٢٠:٠٠</p>
+          <p class="mt-2 text-sm text-slate-400">الجمعة: مغلق</p>
+          <p class="mt-4 text-sm text-slate-400"><a href="tel:+966500000000" class="transition hover:text-amber-400" dir="ltr">+966 50 000 0000</a></p>
+          <p class="mt-1 text-sm text-slate-400"><a href="mailto:info@autocare.sa" class="transition hover:text-amber-400">info@autocare.sa</a></p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">© ٢٠٢٦ أوتو كير. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+
+    const form = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      form.reset();
+      formSuccess.classList.remove('hidden');
+      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
+</body>
+</html>

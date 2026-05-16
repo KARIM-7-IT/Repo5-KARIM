@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أوتو كير | خدماتنا</title>
+  <meta name="description" content="اكتشف خدمات أوتو كير — صيانة دورية، إصلاح محرك، فرامل، كهرباء، تكييف، فحص شامل، والمزيد.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Cairo', 'sans-serif'] },
+          colors: { brand: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' } }
+        }
+      }
+    }
+  </script>
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-950 text-slate-100 font-sans antialiased">
+
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-lg">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-amber-500/20 text-amber-400">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10m14 0h2m-2 0h-5m-9 0H3m2 0h3M6 20h12M6 16h12"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-white">أوتو <span class="text-amber-400">كير</span></span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="index.html" class="text-sm font-medium text-slate-300 transition hover:text-amber-400">الرئيسية</a>
+        <a href="services.html" class="border-b-2 border-amber-400 pb-0.5 text-sm font-semibold text-amber-400">الخدمات</a>
+        <a href="contact.html" class="text-sm font-medium text-slate-300 transition hover:text-amber-400">تواصل معنا</a>
+        <a href="contact.html" class="rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-amber-400">احجز موعداً</a>
+      </div>
+      <button id="menu-btn" type="button" class="rounded-lg p-2 text-slate-300 hover:bg-slate-800 md:hidden" aria-label="فتح القائمة">
+        <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-950 px-4 py-4 md:hidden">
+      <div class="flex flex-col gap-3">
+        <a href="index.html" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-300 hover:bg-slate-900">الرئيسية</a>
+        <a href="services.html" class="rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-amber-400">الخدمات</a>
+        <a href="contact.html" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-300 hover:bg-slate-900">تواصل معنا</a>
+        <a href="contact.html" class="mt-2 rounded-lg bg-amber-500 px-4 py-3 text-center text-sm font-semibold text-slate-950">احجز موعداً</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <section class="border-b border-slate-800 bg-slate-900/30 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl">خدماتنا</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
+          نقدم مجموعة شاملة من خدمات صيانة وإصلاح السيارات بأعلى معايير الجودة — مع أسعار تنافسية وضمان على كل عمل.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">صيانة دورية</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">فحص شامل للمركبة، ضبط الإطارات، وفحص السوائل لضمان أداء مثالي.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ٢٩٩ ر.س</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">تغيير زيت وفلاتر</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">زيت عالي الجودة مع فلاتر هواء وزيت ووقود لحماية المحرك.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ١٤٩ ر.س</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">إصلاح المحرك والقير</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">تشخيص إلكتروني وإصلاح للمحرك وناقل الحركة اليدوي والأوتوماتيك.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">حسب التشخيص</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">فرامل وتعليق</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">فحص واستبدال أقراص وفحمات الفرامل مع نظام التعليق والممتصات.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ٣٩٩ ر.س</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">كهرباء وبطارية</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">فحص الدينامو، البطارية، الأسلاك، والإضاءة مع استبدال عند الحاجة.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ٩٩ ر.س</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">تكييف وتبريد</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">شحن غاز التكييف، فحص الضاغط، وصيانة نظام التبريد للمحرك.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ١٩٩ ر.س</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">فحص شامل قبل الشراء</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">تقرير مفصل بأكثر من ١٠٠ نقطة فحص لاتخاذ قرار شراء واثق.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ٤٩٩ ر.س</p>
+          </article>
+
+          <article class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition hover:border-amber-500/40">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            </span>
+            <h2 class="mt-4 text-lg font-bold text-white">تلميع وتفصيل داخلي</h2>
+            <p class="mt-2 flex-1 text-sm text-slate-400">تلميع خارجي، تنظيف عميق للمقصورة، وحماية الطلاء.</p>
+            <p class="mt-4 text-sm font-semibold text-amber-400">من ٣٤٩ ر.س</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- Process -->
+    <section class="border-t border-slate-800 bg-slate-900/30 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-white">كيف نعمل؟</h2>
+          <p class="mx-auto mt-4 max-w-xl text-slate-400">عملية بسيطة وشفافة من الحجز حتى استلام سيارتك</p>
+        </div>
+        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="relative text-center">
+            <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-500 text-xl font-bold text-slate-950">١</span>
+            <h3 class="mt-5 text-lg font-bold text-white">الحجز</h3>
+            <p class="mt-2 text-sm text-slate-400">احجز موعدك عبر الهاتف أو نموذج التواصل</p>
+          </div>
+          <div class="relative text-center">
+            <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-500 text-xl font-bold text-slate-950">٢</span>
+            <h3 class="mt-5 text-lg font-bold text-white">الفحص</h3>
+            <p class="mt-2 text-sm text-slate-400">فحص دقيق وتشخيص مع تقدير تكلفة واضح</p>
+          </div>
+          <div class="relative text-center">
+            <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-500 text-xl font-bold text-slate-950">٣</span>
+            <h3 class="mt-5 text-lg font-bold text-white">الإصلاح</h3>
+            <p class="mt-2 text-sm text-slate-400">تنفيذ العمل بقطع أصلية وفنيين معتمدين</p>
+          </div>
+          <div class="relative text-center">
+            <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-500 text-xl font-bold text-slate-950">٤</span>
+            <h3 class="mt-5 text-lg font-bold text-white">التسليم</h3>
+            <p class="mt-2 text-sm text-slate-400">تسليم سيارتك مع ضمان وشرح ما تم إنجازه</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-l from-amber-500/10 to-slate-900 px-8 py-14 text-center sm:px-16">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl">هل تحتاج خدمة مخصصة؟</h2>
+          <p class="mx-auto mt-4 max-w-lg text-slate-400">تواصل معنا وسنساعدك في اختيار الخدمة المناسبة لسيارتك</p>
+          <a href="contact.html" class="mt-8 inline-flex items-center gap-2 rounded-lg bg-amber-500 px-10 py-3.5 text-base font-semibold text-slate-950 transition hover:bg-amber-400">
+            احجز موعدك الآن
+            <svg class="h-5 w-5 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/50">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div>
+          <a href="index.html" class="text-xl font-bold text-white">أوتو <span class="text-amber-400">كير</span></a>
+          <p class="mt-4 text-sm leading-relaxed text-slate-400">شريكك الموثوق في صيانة وإصلاح السيارات — جودة، أمان، وشفافية في كل خدمة.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">روابط سريعة</h4>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="transition hover:text-amber-400">الرئيسية</a></li>
+            <li><a href="services.html" class="transition hover:text-amber-400">الخدمات</a></li>
+            <li><a href="contact.html" class="transition hover:text-amber-400">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">ساعات العمل</h4>
+          <p class="mt-4 text-sm text-slate-400">السبت – الخميس: ٨:٠٠ – ٢٠:٠٠</p>
+          <p class="mt-2 text-sm text-slate-400">الجمعة: مغلق</p>
+          <p class="mt-4 text-sm text-slate-400"><a href="tel:+966500000000" class="transition hover:text-amber-400" dir="ltr">+966 50 000 0000</a></p>
+          <p class="mt-1 text-sm text-slate-400"><a href="mailto:info@autocare.sa" class="transition hover:text-amber-400">info@autocare.sa</a></p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">© ٢٠٢٦ أوتو كير. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
